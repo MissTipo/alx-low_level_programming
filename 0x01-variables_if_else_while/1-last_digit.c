@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Prints out a text according to number
- * Reteurn: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
