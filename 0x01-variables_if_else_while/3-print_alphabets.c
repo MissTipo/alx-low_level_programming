@@ -2,6 +2,7 @@
 /**
  * main - Entry point
  * Description: Print the alphabet in lower and uppercase
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
