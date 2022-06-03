@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * min - Entry point
- * Description: Prints all base 16 digits in lowercase
+ * Description: Print all the digits of base 16 in lowercase
  * Return: 0
  */
 int main(void)
@@ -11,5 +11,6 @@ for (x = '0'; x <= '9'; ++x)
 putchar(x);
 for (x = 'a'; x <= 'f'; ++x)
 putchar(x);
+putchar('\n');
 return (0);
 }
