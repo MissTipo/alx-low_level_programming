@@ -4,7 +4,7 @@
  * Description: Prints all single digits of base 10
  * Return: 0
  */
-main int(void)
+int main(void)
 {
 char i;
 for (i = '0'; i <= '9'; ++i)
