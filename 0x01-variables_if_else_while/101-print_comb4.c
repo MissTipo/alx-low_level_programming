@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: Prints all possible different combinations of three digits
- * Return; 0
+ * Return: 0
  */
 int main(void)
 {
