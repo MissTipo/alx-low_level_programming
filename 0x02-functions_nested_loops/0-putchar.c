@@ -1,10 +1,11 @@
+#include <unistd.h>
 #include "main.h"
 #include <stdio.h>
 /**main - prints _putchar
  * Description:  prints _putchar, followed by a new line
  * Return: 0(Success)
  */
-int main(void);
+int main(void)
 {
 char c[8] = "_putchar";
 int i = 0;
