@@ -3,7 +3,6 @@
  * main - prints _putchar, followed by a new line
  * Return: 0 Always(Success)
  */
-{
 int main(void)
 {
 char c[] = "_putchar";
