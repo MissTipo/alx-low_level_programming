@@ -1,14 +1,16 @@
-#include <stdio.h>
+#include <main.h>
 /**
- * Print alphabet - a function that prints the alphabet in lower case
+ * main - prints _putchar, followed by a new line
  * Return: 0 Always(Success)
  */
-void print_alphabet(void)
 {
-int n;
-for (n = 'a'; n <= 'z'; n++);
+int main(void)
+char c[] = "_putchar";
+int i;
+for (i = 0; i < 9; i++)
 {
-_putchar(n);
+_putchar(c[i]);
 }
 _putchar('\n');
+return (0);
 }
