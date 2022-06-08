@@ -40,6 +40,6 @@ if (count != 98)
 printf(", ");
 count++;
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
