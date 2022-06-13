@@ -10,7 +10,7 @@
 int main(void)
 {
 	char password[84];
-	int index = 0, sum = 0, x1,x2
+	int index = 0, sum = 0, x1, x2;
 
 		srand(time(0));
 
@@ -26,7 +26,7 @@ int main(void)
 		x1 = (sum - 2772) / 2;
 		x2 = (sum - 2772) / 2;
 		if ((sum - 2772) % 2 != 0)
-			x1++
+			x1++;
 
 		for (index = 0; password[index]; index++)
 		{
