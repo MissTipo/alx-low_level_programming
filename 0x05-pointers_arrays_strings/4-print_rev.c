@@ -2,18 +2,23 @@
 
 /**
  * print_rev - Prints a string in reverse
+ * p counts to end, n counts back
  * @s: The string to be printed
  * Return: string in reverse
  */
 void print_rev(char *s)
 {
-	int rev = 0, index;
+	int f = 0;
+	int i, n;
 
-	while (s[index++])
-		rev++;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		f++;
+	}
 
-	for (index = rev - 1; index >= 0; index--)
-		_putchar(s[index]);
-
+	for (n = (f - 1); n >= 0; n--)
+	{
+		_putchar(s[n]);
+	}
 	_putchar('\n');
 }
