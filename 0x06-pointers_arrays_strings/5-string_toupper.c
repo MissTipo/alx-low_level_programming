@@ -9,10 +9,10 @@ char *cap_string(char *)
 {
 	int i;
 
-	while (*(s +i))
+	while (*(s + i))
 	{
 		for (*(s + i) >= 'a' && *(s + i) <= 'z')
-			*(s +i) -= 'a' - 'A';
+			*(s + i) -= 'a' - 'A';
 		i++;
 	}
 	return (s);
