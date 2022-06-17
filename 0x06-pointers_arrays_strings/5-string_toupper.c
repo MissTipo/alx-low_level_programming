@@ -5,7 +5,7 @@
  * @s: pointer to the string to convert
  * Return: address of s
  */
-char *cap_string(char *)
+char *string_toupper(char *);
 {
 	int i;
 
