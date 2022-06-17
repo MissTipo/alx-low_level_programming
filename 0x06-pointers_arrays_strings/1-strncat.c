@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: pointer to the destination string
  * @src: pointer to the source string
  * @n: largest number of bytes to append
@@ -12,12 +12,15 @@ char *_strncat(char *dest, char *src, int n)
 	int i, j;
 
 	i = j = 0;
-	for (j = 0; dest[j] != '\0'; j++)
-		;
-	while (src[i] != '\0' && i < n)
-	{
-		dest[j + i] = src[i];
+	while (*(dest + i))
 		i++;
+	while (j < n && *(src + j))
+	{
+		*(dest + i) = *(src + j);
+			i++;
+			j++;
 	}
+	if (j < n)
+		*(dest + i) = *(src + j);
 	return (dest);
 }
