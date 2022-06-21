@@ -14,17 +14,17 @@ int _sqrt_recursion(int n)
 		return (squareroot(n, (n + 1) / 2));
 }
 /**
- * squareroot - calculates natural squareroot
+ * _sqrt - calculates natural squareroot
  * @n: input
  * @i: iterate number
  * Return: natural squareroot
  */
-int squareroot(int n, int i)
+int _sqrt(int n, int i)
 {
 	if (i < 1)
 		return (-1);
 	else if (i * i == 1)
 		return (i);
 	else
-		return (squareroot(n, i - 1));
+		return (_sqrt(n, i - 1));
 }
