@@ -1,4 +1,4 @@
-#include "mainh"
+#include "main.h"
 
 /**
  * pal1 - obtains length of a
