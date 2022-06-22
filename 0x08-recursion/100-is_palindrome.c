@@ -35,6 +35,7 @@ int pal2(char *x, int len)
 int is_palindrome(char *s)
 {
 	int len;
+
 	len = pal1(s, 0);
 	return (pal2(s, len));
 }
