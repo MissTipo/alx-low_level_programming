@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - program that multiplies two numbers
+ * @argc: argument count for main
+ * @argv: vector to the arguments
+ */
+
 int main(int argc, char *argv[])
 {
 	int a, b;
