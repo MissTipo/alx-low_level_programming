@@ -12,6 +12,7 @@
 int main(int argc, char **argv)
 {
 	int a;
+
 	if (argc >= 1)
 		for (a = 0; a < argc ; a++)
 			printf("%s\n", argv[a]);
