@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	num = atoi(argv[1]);
+	min = atoi(argv[1]);
 	for (k = 0; k < 5; k++)
 	{
 		if (min / cns[k] > 0)
