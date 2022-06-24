@@ -6,6 +6,7 @@
  * main - program that multiplies two numbers
  * @argc: argument count for main
  * @argv: vector to the arguments
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
