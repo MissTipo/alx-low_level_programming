@@ -4,16 +4,17 @@
 
 /**
  * malloc_checked - a function that allocates memory using malloc
- * @b - the memory size to allocate
+ * @b: the memory size to allocate in bytes
  * Return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
-	void ptr;
+	void *ptr;
+
 	ptr = malloc(b);
 	if (ptr == NULL)
 	{
-		return (98);
+		exit(98);
 	}
 	return (ptr);
 }
