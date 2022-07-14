@@ -3,8 +3,6 @@
 #include <string.h>
 
 
-
-
 /**
  * _strlen - get the string's lentgh
  * @str: string to get lentgh of
@@ -67,4 +65,3 @@ list_t *add_node_end(list_t **head, const char *str)
 
 
 }
-
