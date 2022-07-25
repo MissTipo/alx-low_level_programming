@@ -7,28 +7,27 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file, i = 0;
+	int file_desc = 0, lenght = 0;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
-	if (file == -1)
-		return (-1);
-
-	while (text_content[i])
-		i++;
-
-	if (text_content == NULL)
+	if (text_content)
 	{
-		close(file);
-		return (-1);
-	}
-	else
-	{
-		write(file, text_content, i);
+		while (text_content[lenght])
+		{
+			lenght++;
+		}
 	}
 
-	close(file);
+	file_desc = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	if (file_desc < 0)
+		return (-1);
+
+
+
+	write(file_desc, text_content, lenght);
+
 	return (1);
 }
