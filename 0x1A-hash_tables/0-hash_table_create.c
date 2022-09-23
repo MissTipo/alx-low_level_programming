@@ -19,7 +19,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	if (arr == NULL)
+	{
 		return (NULL);
+		free(ht);
+	}
 
 	ht->size = size;
 	ht->array = arr;
