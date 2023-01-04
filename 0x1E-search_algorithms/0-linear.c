@@ -1,16 +1,19 @@
 #include "search_algos.h"
 
-/*loop thru' array
-compare each index to target value
-if value[index] == target:return index
-if value == null, return -1
-print elements at every index as it is being searched
-*/
+/*
+ * linear_search - searches for a value in an array of integers
+ * @array: searches for a value in an array of integers
+ * @ size: the number of elements in array
+ * @value: the value being searched
+ * Return: the index of the search value
+ * otherwise: -1
+ */
 
 int linear_search(int *array, size_t size, int value)
 {
 
 	size_t i;
+
 	if (array)
 	{
 		for (i = 0; i < size; i++)
