@@ -1,9 +1,11 @@
 #include "search_algos.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-/*
- * linear_search - searches for a value in an array of integers
+/**
+ * linear_search - Function searches for a value in an array of integers
  * @array: searches for a value in an array of integers
- * @ size: the number of elements in array
+ * @size: the number of elements in array
  * @value: the value being searched
  * Return: the index of the search value
  * otherwise: -1
