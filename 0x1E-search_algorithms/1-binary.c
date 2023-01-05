@@ -2,7 +2,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search- Linear search function
+ * binary_search - Linear search function
  * @array: Given array to search
  * @size: Size of the array
  * @value: Value to search for
@@ -36,15 +36,14 @@ int binary_search(int *array, size_t size, int value)
 		if (array[mid] < value)
 		{
 			low = mid + 1;
-			mid = (low + high) / 2;
+			/*mid = (low + high) / 2;*/
 		}
 		else
 		{
 			/* if array[mid] > value, high == mid-1*/
 			high = mid - 1;
-			mid = (low + high) / 2;
+			/*mid = (low + high) / 2;*/
 		}
 	}
 	return (-1);
-
 }
